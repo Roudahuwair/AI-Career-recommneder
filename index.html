@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Career Recommender</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎓 AI Career Recommender</h1>
+    <p>Answer the quiz and discover your best-fit university major!</p>
+
+    <form id="quizForm">
+      <div class="question">
+        <p>1. Which activity sounds most fun?</p>
+        <label><input type="radio" name="q1" value="AI"> Coding a small app</label>
+        <label><input type="radio" name="q1" value="Design"> Designing a poster</label>
+        <label><input type="radio" name="q1" value="Eng"> Building a project</label>
+        <label><input type="radio" name="q1" value="Biz"> Planning a business idea</label>
+        <label><input type="radio" name="q1" value="Health"> Helping people</label>
+      </div>
+
+      <div class="question">
+        <p>2. You prefer tasks that are...</p>
+        <label><input type="radio" name="q2" value="AI"> Analytical</label>
+        <label><input type="radio" name="q2" value="Design"> Creative</label>
+        <label><input type="radio" name="q2" value="Eng"> Practical</label>
+        <label><input type="radio" name="q2" value="Psych"> People-focused</label>
+        <label><input type="radio" name="q2" value="Biz"> Strategic</label>
+      </div>
+
+      <button type="button" id="submitBtn">Get My Result</button>
+    </form>
+
+    <div id="result" class="hidden">
+      <h2>Your Top Recommended Majors:</h2>
+      <ul id="majorList"></ul>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
